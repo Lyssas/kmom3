@@ -1,0 +1,108 @@
+/** 
+* Description: Core theme for Lydia
+*/
+
+/**
+* Structure
+*/
+html{
+	background-color:rgba(0,0,255,0.1);
+}
+body{
+   background-color:#FFFFFF;
+   font: 1em Verdana, Arial, Helvetica, sans-serif;
+   display: block;
+   margin-left: 80px;
+   margin-right: 80px;
+}
+
+/* set width and center page */
+header#top, div.content, div.debug, div.temp, footer#bottom{
+	margin:0 auto;
+	width:1050px;
+	
+}
+
+div.debug
+{
+	padding: 25px;
+	border: 1px solid #000000;
+	overflow: hidden;
+}
+
+div.temp
+{
+	padding: 25px;
+}
+
+div.content
+{
+	padding: 25px;
+	border: 1px solid #000000;
+}
+
+#header,
+#main,
+{
+   margin:0 auto;
+   width:1050px;
+   background-color:#fff;
+   padding: 1em;
+   overflow-x: hidden;
+}
+div#footer{
+	
+	padding-bottom:20px; /*Padding below footer*/
+	padding-top: 10px;
+	background-color: rgba(0,0,255,0.1);
+	border-top:1px solid #E6E6E6;
+	margin-top: 20px;
+}
+h1,h2
+{
+	border-bottom: solid 2px rgba(249,21,10,0.65);	
+}
+hr
+{
+	border-color: rgba(249,21,10,0.65)
+}
+
+
+/* navigation menu
+-------------------------------------------------------- 
+*/
+
+nav.navmenu {
+
+	font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: 0.1em;
+	font-weight: bold;
+	
+	padding: 5px 8px;
+	margin-top: 10px;
+	
+	font-size: medium;
+	color: red;
+	border-bottom:5px solid rgba(249,21,10,0.65);
+	 
+}
+
+nav.navmenu a {
+	padding:8px 8px;
+	text-decoration:none;
+	border:2px solid transparent;
+	color:#999999;
+}
+
+/*Nav menu item settings on mouse hover*/
+nav.navmenu a:hover {
+	color: black;
+	
+}
+
+header#above{
+	font-family: sans-serif;
+	border-bottom:1px solid #E6E6E6;
+	margin-bottom:4px;
+	color:#000;
+}

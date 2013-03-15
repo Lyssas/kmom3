@@ -1,0 +1,30 @@
+<?php
+/**
+* Holding a instance of CRed to enable use of $this in subclasses.
+*
+* @package RedCore
+*/
+class CObject {
+
+   public $config;
+   public $request;
+   public $data;
+   public $db;
+   public $views;
+   public $session;
+   
+   /**
+    * Constructor
+    */
+   protected function __construct() 
+   {
+   	   $RED = CRed::Instance();
+   	   $this->config   = &$RED->config;
+   	   $this->request  = &$RED->request;
+   	   $this->data     = &$RED->data;
+   	   $this->db       = &$RED->db;
+   	   $this->views    = &$RED->views;
+   	   $this->session    = &$RED->session;
+   }
+
+}
